@@ -22,7 +22,7 @@ function mostrarCambios(){
         Object.keys(respuestaJSON.conversion_rates).forEach(moneda =>{
             const cantidadConvertida = (Number(respuestaJSON.conversion_rates[moneda])*valorCantidad).toFixed(2)
             const divMoneda = $('<div></div>').text(miObjeto.monedaa[moneda] + ' ' + cantidadConvertida);
-            divMoneda.addClass("col-md-2")
+            divMoneda.addClass("col-6 col-md-2")
             divMoneda.addClass("elementoMoneda")
              fila.append(divMoneda);
         })
